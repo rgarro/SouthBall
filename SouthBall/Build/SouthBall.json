@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "SouthBall.data.unityweb",
+"asmCodeUrl": "SouthBall.asm.code.unityweb",
+"asmMemoryUrl": "SouthBall.asm.memory.unityweb",
+"asmFrameworkUrl": "SouthBall.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#222C36"
+}
