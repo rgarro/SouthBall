@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour {
 
-	public float speed;
+	public float speed ;
 	private Rigidbody rb;
 	private int count;
 	public Text countText;
@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour {
 
 
 	void Start(){
+		this.speed = 4.13f;
 		rb = GetComponent<Rigidbody> ();
 		this.count = 0;
 		this.setCountText ();
@@ -22,7 +23,7 @@ public class PlayerController : MonoBehaviour {
 	void FixedUpdate(){
 		float moveHorizontal = Input.GetAxis ("Horizontal");
 		float moveVertical = Input.GetAxis ("Vertical");
-		Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
+		Vector3 movement = new Vector3 (moveHorizontal, 0.05f, moveVertical);
 		rb.AddForce (movement * this.speed);
 	}
 
