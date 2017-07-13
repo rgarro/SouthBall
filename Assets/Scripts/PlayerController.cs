@@ -21,10 +21,19 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void FixedUpdate(){
-		float moveHorizontal = Input.GetAxis ("Horizontal");
-		float moveVertical = Input.GetAxis ("Vertical");
-		Vector3 movement = new Vector3 (moveHorizontal, 0.05f, moveVertical);
-		rb.AddForce (movement * this.speed);
+		if (SystemInfo.deviceType == DeviceType.Desktop) {
+			float moveHorizontal = Input.GetAxis ("Horizontal");
+			float moveVertical = Input.GetAxis ("Vertical");
+			Vector3 movement = new Vector3 (moveHorizontal, 0.05f, moveVertical);
+			rb.AddForce (movement * this.speed);
+		}else
+		{
+			// Player movement in mobile devices
+			// Building of force vector 
+			Vector3 movement = new Vector3 (Input.acceleration.x, 0.0f, Input.acceleration.y);
+			// Adding force to rigidbody
+			rigidbody.AddForce(movement * speed * Time.deltaTime);
+		}
 	}
 
 	void OnTriggerEnter(Collider other){
