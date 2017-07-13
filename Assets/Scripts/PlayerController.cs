@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour {
 			// Building of force vector 
 			Vector3 movement = new Vector3 (Input.acceleration.x, 0.0f, Input.acceleration.y);
 			// Adding force to rigidbody
-			rigidbody.AddForce(movement * speed * Time.deltaTime);
+			rb.AddForce(movement * speed * Time.deltaTime);
 		}
 	}
 
