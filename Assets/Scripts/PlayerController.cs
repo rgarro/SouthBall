@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour {
 	public Text countText;
 	public Text winText;
 
+	private SoundTest soun;
 
 	void Start(){
 		//this.speed = 4.13f;
@@ -66,6 +67,9 @@ public class PlayerController : MonoBehaviour {
 			other.gameObject.SetActive (false);
 			this.count = this.count + 1;
 			this.setCountText ();
+
+			//AudioSource audio = other.gameObject.//GetComponent<logoAudio> ();
+			//audio.Play ();
 		}
 
     }
