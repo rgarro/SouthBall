@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour {
 	private int count;
 	public Text countText;
 	public Text winText;
+	public AudioSource mySound;
 
 	private SoundTest soun;
 
@@ -68,8 +69,10 @@ public class PlayerController : MonoBehaviour {
 			this.count = this.count + 1;
 			this.setCountText ();
 
-			//AudioSource audio = other.gameObject.//GetComponent<logoAudio> ();
-			//audio.Play ();
+			AudioSource audio = GetComponent<AudioSource> ();
+			audio.Play ();
+
+			//mySound.PlayOneShot ();
 		}
 
     }

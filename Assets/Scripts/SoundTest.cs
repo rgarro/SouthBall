@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class SoundTest : MonoBehaviour {
 
-	public AudioClip 
+	public AudioClip soundFile;
+	AudioSource mySound;
+
+	public void mPlay(){
+		mySound = GetComponent<AudioSource> ();
+		mySound.Play ();
+	}
 
 	// Use this for initialization
 	void Start () {
