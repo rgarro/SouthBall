@@ -50,6 +50,8 @@
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Rotator.cs" />
      <Compile Include="Assets\Scripts\SoundTest.cs" />
+     <None Include="Assets\Editor\GitHub\CREDITS.txt" />
+     <None Include="Assets\Editor\GitHub\EULA.txt" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>/Users/rolando/Documents/Unity/SouthBall/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
