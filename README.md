@@ -9,7 +9,6 @@ The Dharmakaya of PVC Arduino Barometric Windspeed markers for windsurf , kitesu
 Download for Android  https://github.com/rgarro/SouthBall/raw/master/SouthBall.apk  
 
 
-Did you like it ? ...
-Buy Me a Beer, Starbucks Expresso or send a cheese burguer ... [Paypal](https://www.paypal.me/gospelOfLuke/25).
+Did you like it? send me funds,help me to pay my MIT major ... [Paypal](https://www.paypal.me/gospelOfLuke/25).
 
 [![que no se resistieran, por que sino los mataban ... ](https://raw.githubusercontent.com/rgarro/SouthBall/master/SouthBall.png)]
